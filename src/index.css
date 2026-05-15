@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #020817;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #f8fafc;
+  }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 2px; }
+textarea { resize: none; outline: none; }
+textarea::placeholder { color: #64748b; }
+
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.3} }
+@keyframes fade-up { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
+.fade-up { animation: fade-up 0.4s ease both; }
+
+.lang-btn { background: transparent; border: 1px solid #1e293b; border-radius: 6px; padding: 5px 14px; cursor: pointer; font-size: 12px; font-weight: 600; letter-spacing: .04em; transition: all .15s; }
+.lang-btn.active { background: #f8fafc; color: #020817; border-color: #f8fafc; }
+.lang-btn:not(.active) { color: #94a3b8; }
+
+.analyse-btn { background: #f8fafc; color: #020817; border: none; border-radius: 8px; padding: 12px 28px; font-size: 14px; font-weight: 700; cursor: pointer; letter-spacing: .02em; transition: all .15s; font-family: inherit; }
+.analyse-btn:hover:not(:disabled) { background: #e2e8f0; }
+.analyse-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.back-btn { background: transparent; border: 1px solid #1e293b; color: #94a3b8; border-radius: 6px; padding: 6px 14px; font-size: 12px; cursor: pointer; transition: all .15s; font-family: inherit; }
+.back-btn:hover { border-color: #334155; color: #cbd5e1; }
