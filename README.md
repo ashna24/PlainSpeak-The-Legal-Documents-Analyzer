@@ -43,7 +43,7 @@ PlainSpeak uses AI to instantly analyse any contract and explain every clause in
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/plainspeak.git
+git clone https://github.com/ashna24/plainspeak.git
 cd plainspeak
 
 # Install dependencies
