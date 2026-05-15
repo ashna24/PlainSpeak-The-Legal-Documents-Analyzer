@@ -15,7 +15,7 @@ PlainSpeak uses AI to instantly analyse any contract and explain every clause in
 ## Features
 
 - 📄 **Paste any contract** — lease, employment, freelance, or any legal document
-- 🔴 **Inline risk highlighting** — clauses colour-coded green / amber / red directly on the original text
+- 🔴 **Inline risk highlighting** — clauses colour-coded green / yellow / red directly on the original text
 - 🔁 **Side-by-side sync** — hover a highlighted clause to see its explanation; panels stay in sync
 - 🌐 **English ↔ Urdu toggle** — all explanations switch live, with proper RTL layout and Noto Nastaliq font
 - 📊 **Risk score meter** — overall 0–100 danger score for the full document
@@ -28,8 +28,7 @@ PlainSpeak uses AI to instantly analyse any contract and explain every clause in
 | Layer | Technology |
 |---|---|
 | Frontend | React + Vite |
-| AI Model | Gemini 2.0 Flash (Google AI Studio / Vertex AI) |
-| Deployment | Antigravity |
+| AI Model | Gemini 2.5 Flash |
 | Fonts | Noto Nastaliq Urdu, Fraunces, DM Mono |
 
 ---
@@ -53,13 +52,8 @@ npm install
 
 ### Configuration
 
-Open `src/App.jsx` and add your API key at the top:
-
-```js
-const API_KEY = "AIza-YOUR-KEY-HERE";
-```
-
-> ⚠️ For production, move this to an environment variable and never commit your key.
+Create a .env.local file in the root directory and add your key:
+VITE_GEMINI_API_KEY=your_key_here
 
 ### Run locally
 
