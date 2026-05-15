@@ -79,13 +79,11 @@ Deploy the generated `dist/` folder to Antigravity, Vercel, or Netlify.
 
 ---
 
-## How It Works
+## Demo
 
-1. User pastes contract text into the input panel
-2. Text is sent to Gemini API with a structured system prompt
-3. Gemini returns a strict JSON object with per-clause risk levels, plain-English summaries, Urdu translations, and lawyer questions
-4. App uses substring matching to map each clause back to its exact position in the original text
-5. Highlights are rendered inline; panels sync on hover
+
+https://github.com/user-attachments/assets/be3c8774-011f-4182-a33c-df93123f4fb8
+
 
 ---
 
